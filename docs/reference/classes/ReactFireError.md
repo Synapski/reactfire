@@ -1,195 +1,174 @@
+[**ReactFire reference docs**](../README.md) • **Docs**
+
+***
+
 [ReactFire reference docs](../README.md) / ReactFireError
 
 # Class: ReactFireError
 
-## Hierarchy
+## Extends
 
 - `Error`
 
-  ↳ **`ReactFireError`**
-
-## Table of contents
-
-### Constructors
-
-- [constructor](ReactFireError.md#constructor)
-
-### Properties
-
-- [cause](ReactFireError.md#cause)
-- [code](ReactFireError.md#code)
-- [customData](ReactFireError.md#customdata)
-- [message](ReactFireError.md#message)
-- [name](ReactFireError.md#name)
-- [stack](ReactFireError.md#stack)
-- [prepareStackTrace](ReactFireError.md#preparestacktrace)
-- [stackTraceLimit](ReactFireError.md#stacktracelimit)
-
-### Methods
-
-- [captureStackTrace](ReactFireError.md#capturestacktrace)
-
 ## Constructors
 
-### constructor
+### new ReactFireError()
 
-• **new ReactFireError**(`code`, `message`, `customData?`)
+> **new ReactFireError**(`code`, `message`, `customData`?): [`ReactFireError`](ReactFireError.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `code` | `string` |
-| `message` | `string` |
-| `customData?` | `Record`<`string`, `unknown`\> |
-
-#### Overrides
-
-Error.constructor
-
-#### Defined in
-
-[src/index.ts:15](https://github.com/FirebaseExtended/reactfire/blob/main/src/index.ts#L15)
-
-## Properties
-
-### cause
-
-• `Optional` **cause**: `unknown`
-
-#### Inherited from
-
-Error.cause
-
-#### Defined in
-
-node_modules/typescript/lib/lib.es2022.error.d.ts:24
-
-___
-
-### code
-
-• `Readonly` **code**: `string`
-
-#### Defined in
-
-[src/index.ts:15](https://github.com/FirebaseExtended/reactfire/blob/main/src/index.ts#L15)
-
-___
-
-### customData
-
-• `Optional` **customData**: `Record`<`string`, `unknown`\>
-
-#### Defined in
-
-[src/index.ts:15](https://github.com/FirebaseExtended/reactfire/blob/main/src/index.ts#L15)
-
-___
-
-### message
+• **code**: `string`
 
 • **message**: `string`
 
-#### Inherited from
+• **customData?**: `Record`\<`string`, `unknown`\>
 
-Error.message
+#### Returns
 
-#### Defined in
-
-node_modules/typescript/lib/lib.es5.d.ts:1068
-
-___
-
-### name
-
-• `Readonly` **name**: ``"ReactFireError"``
+[`ReactFireError`](ReactFireError.md)
 
 #### Overrides
 
-Error.name
+`Error.constructor`
 
 #### Defined in
 
-[src/index.ts:13](https://github.com/FirebaseExtended/reactfire/blob/main/src/index.ts#L13)
+[src/index.ts:15](https://github.com/Synapski/reactfire/blob/main/src/index.ts#L15)
 
-___
+## Properties
 
-### stack
+### cause?
 
-• `Optional` **stack**: `string`
+> `optional` **cause**: `unknown`
 
 #### Inherited from
 
-Error.stack
+`Error.cause`
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es5.d.ts:1069
+node\_modules/.pnpm/typescript@5.5.4/node\_modules/typescript/lib/lib.es2022.error.d.ts:24
 
-___
+***
 
-### prepareStackTrace
+### code
 
-▪ `Static` `Optional` **prepareStackTrace**: (`err`: `Error`, `stackTraces`: `CallSite`[]) => `any`
+> `readonly` **code**: `string`
 
-#### Type declaration
+#### Defined in
 
-▸ (`err`, `stackTraces`): `any`
+[src/index.ts:15](https://github.com/Synapski/reactfire/blob/main/src/index.ts#L15)
+
+***
+
+### customData?
+
+> `optional` **customData**: `Record`\<`string`, `unknown`\>
+
+#### Defined in
+
+[src/index.ts:15](https://github.com/Synapski/reactfire/blob/main/src/index.ts#L15)
+
+***
+
+### message
+
+> **message**: `string`
+
+#### Inherited from
+
+`Error.message`
+
+#### Defined in
+
+node\_modules/.pnpm/typescript@5.5.4/node\_modules/typescript/lib/lib.es5.d.ts:1077
+
+***
+
+### name
+
+> `readonly` **name**: `"ReactFireError"` = `'ReactFireError'`
+
+#### Overrides
+
+`Error.name`
+
+#### Defined in
+
+[src/index.ts:13](https://github.com/Synapski/reactfire/blob/main/src/index.ts#L13)
+
+***
+
+### stack?
+
+> `optional` **stack**: `string`
+
+#### Inherited from
+
+`Error.stack`
+
+#### Defined in
+
+node\_modules/.pnpm/typescript@5.5.4/node\_modules/typescript/lib/lib.es5.d.ts:1078
+
+***
+
+### prepareStackTrace()?
+
+> `static` `optional` **prepareStackTrace**: (`err`, `stackTraces`) => `any`
 
 Optional override for formatting stack traces
 
-**`See`**
+#### Parameters
 
-https://v8.dev/docs/stack-trace-api#customizing-stack-traces
+• **err**: `Error`
 
-##### Parameters
+• **stackTraces**: `CallSite`[]
 
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
-| `stackTraces` | `CallSite`[] |
-
-##### Returns
+#### Returns
 
 `any`
 
+#### See
+
+https://v8.dev/docs/stack-trace-api#customizing-stack-traces
+
 #### Inherited from
 
-Error.prepareStackTrace
+`Error.prepareStackTrace`
 
 #### Defined in
 
-node_modules/@types/node/globals.d.ts:11
+node\_modules/.pnpm/@types+node@22.5.4/node\_modules/@types/node/globals.d.ts:143
 
-___
+***
 
 ### stackTraceLimit
 
-▪ `Static` **stackTraceLimit**: `number`
+> `static` **stackTraceLimit**: `number`
 
 #### Inherited from
 
-Error.stackTraceLimit
+`Error.stackTraceLimit`
 
 #### Defined in
 
-node_modules/@types/node/globals.d.ts:13
+node\_modules/.pnpm/@types+node@22.5.4/node\_modules/@types/node/globals.d.ts:145
 
 ## Methods
 
-### captureStackTrace
+### captureStackTrace()
 
-▸ `Static` **captureStackTrace**(`targetObject`, `constructorOpt?`): `void`
+> `static` **captureStackTrace**(`targetObject`, `constructorOpt`?): `void`
 
 Create .stack property on a target object
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `targetObject` | `object` |
-| `constructorOpt?` | `Function` |
+• **targetObject**: `object`
+
+• **constructorOpt?**: `Function`
 
 #### Returns
 
@@ -197,8 +176,8 @@ Create .stack property on a target object
 
 #### Inherited from
 
-Error.captureStackTrace
+`Error.captureStackTrace`
 
 #### Defined in
 
-node_modules/@types/node/globals.d.ts:4
+node\_modules/.pnpm/@types+node@22.5.4/node\_modules/@types/node/globals.d.ts:136

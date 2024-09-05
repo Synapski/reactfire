@@ -1,116 +1,121 @@
+[**ReactFire reference docs**](../README.md) • **Docs**
+
+***
+
 [ReactFire reference docs](../README.md) / ObservableStatusLoading
 
-# Interface: ObservableStatusLoading<T\>
+# Interface: ObservableStatusLoading\<T\>
 
-## Type parameters
+## Extends
 
-| Name |
-| :------ |
-| `T` |
+- `ObservableStatusBase`\<`T`\>
 
-## Hierarchy
+## Type Parameters
 
-- `ObservableStatusBase`<`T`\>
-
-  ↳ **`ObservableStatusLoading`**
-
-## Table of contents
-
-### Properties
-
-- [data](ObservableStatusLoading.md#data)
-- [error](ObservableStatusLoading.md#error)
-- [firstValuePromise](ObservableStatusLoading.md#firstvaluepromise)
-- [hasEmitted](ObservableStatusLoading.md#hasemitted)
-- [isComplete](ObservableStatusLoading.md#iscomplete)
-- [status](ObservableStatusLoading.md#status)
+• **T**
 
 ## Properties
 
 ### data
 
-• **data**: `undefined`
+> **data**: `undefined`
+
+The most recent value.
+
+If `initialData` is passed in, the first value of `data` will be the valuea provided in `initialData` **UNLESS** the underlying observable is ready, in which case it will skip `initialData`.
 
 #### Overrides
 
-ObservableStatusBase.data
+`ObservableStatusBase.data`
 
 #### Defined in
 
-[src/useObservable.ts:80](https://github.com/FirebaseExtended/reactfire/blob/main/src/useObservable.ts#L80)
+[src/useObservable.ts:80](https://github.com/Synapski/reactfire/blob/main/src/useObservable.ts#L80)
 
-___
+***
 
 ### error
 
-• **error**: `undefined` \| `Error`
+> **error**: `undefined` \| `Error`
 
 Any error that may have occurred in the underlying observable
 
 #### Inherited from
 
-ObservableStatusBase.error
+`ObservableStatusBase.error`
 
 #### Defined in
 
-[src/useObservable.ts:60](https://github.com/FirebaseExtended/reactfire/blob/main/src/useObservable.ts#L60)
+[src/useObservable.ts:60](https://github.com/Synapski/reactfire/blob/main/src/useObservable.ts#L60)
 
-___
+***
 
 ### firstValuePromise
 
-• **firstValuePromise**: `Promise`<`void`\>
+> **firstValuePromise**: `Promise`\<`void`\>
 
 Promise that resolves after first emit from observable
 
 #### Inherited from
 
-ObservableStatusBase.firstValuePromise
+`ObservableStatusBase.firstValuePromise`
 
 #### Defined in
 
-[src/useObservable.ts:64](https://github.com/FirebaseExtended/reactfire/blob/main/src/useObservable.ts#L64)
+[src/useObservable.ts:64](https://github.com/Synapski/reactfire/blob/main/src/useObservable.ts#L64)
 
-___
+***
 
 ### hasEmitted
 
-• **hasEmitted**: ``false``
+> **hasEmitted**: `false`
+
+Indicates whether the hook has emitted a value at some point
+
+If `initialData` is passed in, this will be `true`.
 
 #### Overrides
 
-ObservableStatusBase.hasEmitted
+`ObservableStatusBase.hasEmitted`
 
 #### Defined in
 
-[src/useObservable.ts:81](https://github.com/FirebaseExtended/reactfire/blob/main/src/useObservable.ts#L81)
+[src/useObservable.ts:81](https://github.com/Synapski/reactfire/blob/main/src/useObservable.ts#L81)
 
-___
+***
 
 ### isComplete
 
-• **isComplete**: `boolean`
+> **isComplete**: `boolean`
 
 If this is `true`, the hook will be emitting no further items.
 
 #### Inherited from
 
-ObservableStatusBase.isComplete
+`ObservableStatusBase.isComplete`
 
 #### Defined in
 
-[src/useObservable.ts:50](https://github.com/FirebaseExtended/reactfire/blob/main/src/useObservable.ts#L50)
+[src/useObservable.ts:50](https://github.com/Synapski/reactfire/blob/main/src/useObservable.ts#L50)
 
-___
+***
 
 ### status
 
-• **status**: ``"loading"``
+> **status**: `"loading"`
+
+The loading status.
+
+- `loading`: Waiting for the first value from an observable
+- `error`: Something went wrong. Check `ObservableStatus.error` for more details
+- `success`: The hook has emitted at least one value
+
+If `initialData` is passed in, this will skip `loading` and go straight to `success`.
 
 #### Overrides
 
-ObservableStatusBase.status
+`ObservableStatusBase.status`
 
 #### Defined in
 
-[src/useObservable.ts:79](https://github.com/FirebaseExtended/reactfire/blob/main/src/useObservable.ts#L79)
+[src/useObservable.ts:79](https://github.com/Synapski/reactfire/blob/main/src/useObservable.ts#L79)

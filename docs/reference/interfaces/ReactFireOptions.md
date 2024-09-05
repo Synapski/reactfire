@@ -1,68 +1,59 @@
+[**ReactFire reference docs**](../README.md) • **Docs**
+
+***
+
 [ReactFire reference docs](../README.md) / ReactFireOptions
 
-# Interface: ReactFireOptions<T\>
+# Interface: ReactFireOptions\<T\>
 
-## Type parameters
+## Extended by
 
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
+- [`SignInCheckOptionsBasic`](SignInCheckOptionsBasic.md)
 
-## Hierarchy
+## Type Parameters
 
-- **`ReactFireOptions`**
-
-  ↳ [`SignInCheckOptionsBasic`](SignInCheckOptionsBasic.md)
-
-## Table of contents
-
-### Properties
-
-- [idField](ReactFireOptions.md#idfield)
-- [initialData](ReactFireOptions.md#initialdata)
-- [startWithValue](ReactFireOptions.md#startwithvalue)
-- [suspense](ReactFireOptions.md#suspense)
+• **T** = `unknown`
 
 ## Properties
 
-### idField
+### idField?
 
-• `Optional` **idField**: `string`
-
-#### Defined in
-
-[src/index.ts:25](https://github.com/FirebaseExtended/reactfire/blob/main/src/index.ts#L25)
-
-___
-
-### initialData
-
-• `Optional` **initialData**: `any`
+> `optional` **idField**: `string`
 
 #### Defined in
 
-[src/index.ts:26](https://github.com/FirebaseExtended/reactfire/blob/main/src/index.ts#L26)
+[src/index.ts:25](https://github.com/Synapski/reactfire/blob/main/src/index.ts#L25)
 
-___
+***
 
-### startWithValue
+### initialData?
 
-• `Optional` **startWithValue**: `any`
+> `optional` **initialData**: `any`
 
-**`Deprecated`**
+#### Defined in
+
+[src/index.ts:26](https://github.com/Synapski/reactfire/blob/main/src/index.ts#L26)
+
+***
+
+### ~~startWithValue?~~
+
+> `optional` **startWithValue**: `any`
+
+#### Deprecated
 
 use initialData instead
 
 #### Defined in
 
-[src/index.ts:30](https://github.com/FirebaseExtended/reactfire/blob/main/src/index.ts#L30)
+[src/index.ts:30](https://github.com/Synapski/reactfire/blob/main/src/index.ts#L30)
 
-___
+***
 
-### suspense
+### suspense?
 
-• `Optional` **suspense**: `boolean`
+> `optional` **suspense**: `boolean`
 
 #### Defined in
 
-[src/index.ts:31](https://github.com/FirebaseExtended/reactfire/blob/main/src/index.ts#L31)
+[src/index.ts:31](https://github.com/Synapski/reactfire/blob/main/src/index.ts#L31)

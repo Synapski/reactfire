@@ -1,41 +1,37 @@
+[**ReactFire reference docs**](../README.md) • **Docs**
+
+***
+
 [ReactFire reference docs](../README.md) / AuthCheckProps
 
 # Interface: AuthCheckProps
-
-## Table of contents
-
-### Properties
-
-- [children](AuthCheckProps.md#children)
-- [fallback](AuthCheckProps.md#fallback)
-- [requiredClaims](AuthCheckProps.md#requiredclaims)
 
 ## Properties
 
 ### children
 
-• **children**: `ReactNode`
+> **children**: `ReactNode`
 
 #### Defined in
 
-[src/auth.tsx:44](https://github.com/FirebaseExtended/reactfire/blob/main/src/auth.tsx#L44)
+[src/auth.tsx:44](https://github.com/Synapski/reactfire/blob/main/src/auth.tsx#L44)
 
-___
+***
 
 ### fallback
 
-• **fallback**: `ReactNode`
+> **fallback**: `ReactNode`
 
 #### Defined in
 
-[src/auth.tsx:43](https://github.com/FirebaseExtended/reactfire/blob/main/src/auth.tsx#L43)
+[src/auth.tsx:43](https://github.com/Synapski/reactfire/blob/main/src/auth.tsx#L43)
 
-___
+***
 
-### requiredClaims
+### requiredClaims?
 
-• `Optional` **requiredClaims**: `Object`
+> `optional` **requiredClaims**: `Object`
 
 #### Defined in
 
-[src/auth.tsx:45](https://github.com/FirebaseExtended/reactfire/blob/main/src/auth.tsx#L45)
+[src/auth.tsx:45](https://github.com/Synapski/reactfire/blob/main/src/auth.tsx#L45)

@@ -1,41 +1,37 @@
+[**ReactFire reference docs**](../README.md) • **Docs**
+
+***
+
 [ReactFire reference docs](../README.md) / SuspensePerfProps
 
 # Interface: SuspensePerfProps
-
-## Table of contents
-
-### Properties
-
-- [children](SuspensePerfProps.md#children)
-- [fallback](SuspensePerfProps.md#fallback)
-- [traceId](SuspensePerfProps.md#traceid)
 
 ## Properties
 
 ### children
 
-• **children**: `ReactNode`
+> **children**: `ReactNode`
 
 #### Defined in
 
-[src/performance.tsx:4](https://github.com/FirebaseExtended/reactfire/blob/main/src/performance.tsx#L4)
+[src/performance.tsx:4](https://github.com/Synapski/reactfire/blob/main/src/performance.tsx#L4)
 
-___
+***
 
 ### fallback
 
-• **fallback**: `ReactNode`
+> **fallback**: `ReactNode`
 
 #### Defined in
 
-[src/performance.tsx:6](https://github.com/FirebaseExtended/reactfire/blob/main/src/performance.tsx#L6)
+[src/performance.tsx:6](https://github.com/Synapski/reactfire/blob/main/src/performance.tsx#L6)
 
-___
+***
 
 ### traceId
 
-• **traceId**: `string`
+> **traceId**: `string`
 
 #### Defined in
 
-[src/performance.tsx:5](https://github.com/FirebaseExtended/reactfire/blob/main/src/performance.tsx#L5)
+[src/performance.tsx:5](https://github.com/Synapski/reactfire/blob/main/src/performance.tsx#L5)
